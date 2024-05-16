@@ -1,0 +1,26 @@
+<template>
+    <lightning-checkbox-group name="Checkbox Group"
+                         label="Checkbox Group"
+                         options={options}
+                        value={value}
+                        onchange={handleChange}></lightning-checkbox-group>
+    <lightning-radio-group name="radioGroup"
+                          label="Radio Group"
+                          options={options}
+                          value={value}
+                          type="radio"></lightning-radio-group>
+    <lightning-combobox
+                          name="progress"
+                          label="Status"
+                          value={value}
+                          placeholder="Select Progress"
+                          options={options}
+                          onchange={handleChange} ></lightning-combobox>
+    <lightning-textarea name="input2" label="Textarea field with a predefined value" value="initial value" placeholder="write here"></lightning-textarea>
+    <lightning-formatted-email value="useremail@gmail.com" ></lightning-formatted-email>
+    <br>
+    <lightning-formatted-date-time value="1547250828000" year="2-digit" month="short" day="2-digit" weekday="narrow"></lightning-formatted-date-time>
+    <br>
+    <lightning-formatted-date-time value="1547250828000" year="2-digit" month="short" day="2-digit" hour="numeric"
+                                       weekday="long" era="short"></lightning-formatted-date-time>
+</template>
